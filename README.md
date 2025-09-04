@@ -40,6 +40,22 @@ This project generates a realistic terrain using Perlin noise and visualizes it 
 - Use reinforcement learning for adaptive navigation
 - Port to Unity or a game engine for real-time simulation
 
+## Interactive 3D Terrain Visualization (pythreejs)
+
+This feature uses [pythreejs](https://github.com/jupyter-widgets/pythreejs) to render the terrain as an interactive 3D mesh in the notebook. The mesh is colored by elevation and can be rotated, zoomed, and panned.
+
+**Requirements:**
+- `pythreejs` (install with `pip install pythreejs`)
+- Jupyter notebook or JupyterLab
+
+**How to use:**
+- Run the relevant notebook cell to generate the mesh after terrain creation.
+- Use mouse or touch to interact with the mesh (rotate, zoom, pan).
+
+**Notes:**
+- For best performance, the terrain is downsampled before mesh construction.
+- Camera and controls are centered on the mesh for optimal viewing.
+
 ## Installation
 ```sh
 pip install numpy matplotlib scipy noise
