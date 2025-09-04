@@ -42,7 +42,15 @@ This project generates a realistic terrain using Perlin noise and visualizes it 
 
 ## Interactive 3D Terrain Visualization (pythreejs)
 
+
 This feature uses [pythreejs](https://github.com/jupyter-widgets/pythreejs) to render the terrain as an interactive 3D mesh in the notebook. The mesh is colored by elevation and can be rotated, zoomed, and panned.
+
+### Additional Functionality
+- **Waypoint Markers:** Start, intermediary, and end points are displayed as colored 3D spheres directly on the mesh for clear visual reference.
+- **A* Path Overlay:** The computed A* path is rendered as a red 3D line over the terrain, showing the agent's route in 3D space.
+- **Improved Mesh Rendering:** Elevation variance and color mapping are enhanced for better visual contrast and clarity.
+
+These features make the 3D visualization not only interactive, but also informative for understanding both the terrain and the pathfinding solution.
 
 **Requirements:**
 - `pythreejs` (install with `pip install pythreejs`)
